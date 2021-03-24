@@ -40,10 +40,14 @@
     color: rgb(66, 31, 190);
     border: 2px solid #3eb2b6;
   }
-
 .neonMode {
     -webkit-animation: bgcolor 20s infinite;
     animation: bgcolor 10s infinite;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
+.converterButton{
+background-color: rgb(153, 141, 158);
+    color: rgb(41, 29, 85);
+    border: 2px solid #8cb63e;
+  }

@@ -7,9 +7,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="code.js"></script>
+
 </head>
 
-<body class = "normalMode">
+<body>
   
   <nav class="navbar sticky-top navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html" style = "position:relative; left:1.5%; top:-1.5%;">
@@ -34,40 +35,35 @@
     </a>
   </nav>
 
+
   <div class="jumbotron" style="background-image: url(Images\logo_ROCM_RGB_WEB.jpg);">
     <div class="container">
       <h1 class="text-center">
-        Home Pagina  
+        Coole Tools  
       </h1>
     </div>
-</div>
+  </div>
 
   <div style = "position:relative; left:5%; top:10%">
     <h1>
-      Welkom op mijn site!
+    Hier zijn een paar handige tools
     </h1>
     <h5>
-      Mijn naam is Gurjinder Singh, student uit klas 1LA. Ik ben een beginner programmer HTMl en C#.
+      Hier is de converter die dagen naar uren verandert
     </h5>
-    <h5>
-      Gebruik de navbar om door hem te navigeren.
-    </h5>
-    <br>
-    <div>
-      <img class="img-responsive; max-width: 100%" src="Images\ProfilePictureEmpty.png" width="25%" height="25%" alt="ProfilePictureEmpty">
-    </div>
-
-    <h2>
-      Gurjinder Singh
-    </h2>
-    <p>
-      Ik gebruik de progammas Microsoft Visual Studio Code en Microsoft Visual Studio 2019
+    <input type="number" id="numberDays" value="Voer dagen hier in">
+    <button class= "converterButton" onclick="dayToHour()">converteer</button>
+    <p id="hours">
+      Hier zijn de dagen in uren: 
     </p>
-
+    <br>
+    <h5>Klik deze knop!</h5>
+    <button class = "NeonModeButton" id="Switch" onclick="button()">Activeer neon mode!</button>
   </div>
 
   <div class="footer" style = "position:relative; top:50px;">
     <p>©2021 Gurjinder Singh</p>
   </div>
+
 </body>
 </html>
