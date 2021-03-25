@@ -1,7 +1,7 @@
 function button(){
   const bodyTheme = document.body;
   bodyTheme.classList.toggle("neonMode");
-  setInterval(button, 6000);
+  // setInterval(button, 6000);
 };
 const NeonModeButton = document.getElementById('NeonModeButton');
 NeonModeButton.onclick = () => {
