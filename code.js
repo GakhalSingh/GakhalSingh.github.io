@@ -17,3 +17,4 @@ function dayToHour() {
   document.getElementById("days").innerHTML = days * 24;
   console.log(days, hours);
 };
+
