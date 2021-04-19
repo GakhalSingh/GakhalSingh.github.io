@@ -8,8 +8,19 @@
 //  body.classList.replace('normalMode', 'neonMode');
 //};
 let antwoord = 0;
-let input1 = document.getElementById('inputNumber1').value;
-let input2 = document.getElementById('inputNumber2').value;
+let input1 = "0" + document.getElementById('inputNumber1').value;
+let input2 = "0" + document.getElementById('inputNumber2').value;
+
+const numberOne =   "1";
+const numberTwo =   "2";
+const numberThree = "3";
+const numberFour =  "4";
+const numberFive =  "5";
+const numberSix =   "6";
+const numberSeven = "7";
+const numberEight = "8";
+const numberNine =  "9";
+const numberZero =  "0";
 
 function keerSom() {
     let input1 = document.getElementById('inputNumber1').value;
@@ -20,7 +31,7 @@ function keerSom() {
   function plusSom() {
     let input1 = document.getElementById('inputNumber1').value;
     let input2 = document.getElementById('inputNumber2').value;
-    antwoord = input1 + input2;
+    antwoord = input1.value + input2.value;
     console.log(input1, input2, antwoord);
   };
   function minSom() {
