@@ -41,13 +41,13 @@ function keerSom() {
   };
   function EURtoBITC() {
     let input1 = document.getElementById('inputNumber11').value;
-    antwoord = input1 * 46762.26;
+    antwoord = input1 / 46762.26;
     console.log(input1, antwoord);
     alert("De waarde van EUR naar BITC is B" + antwoord);
   };
   function BITCtoEUR() {
     let input1 = document.getElementById('inputNumber12').value;
-    antwoord = input1 / 46762.26
+    antwoord = input1 * 46762.26
     console.log(input1, antwoord);
     alert("Uw antwoord voor uw deelsom is €" + antwoord);
   };
