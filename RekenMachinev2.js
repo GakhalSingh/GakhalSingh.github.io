@@ -31,13 +31,13 @@ function keerSom() {
     let input1 = document.getElementById('inputNumber9').value;
     antwoord = input1 * 1.20;
     console.log(input1, antwoord);
-    alert("De waarde van EUR naar USD is $" + antwoord);
+    alert("De waarde van EUR naar USD is $" + antwoord.toFixed(2));
   };
   function USDtoEUR() {
     let input1 = document.getElementById('inputNumber10').value;
     antwoord = input1 * 0.83;
     console.log(input1, antwoord);
-    alert("De waarde van USD naar EUR is €" + antwoord);
+    alert("De waarde van USD naar EUR is €" + antwoord.toFixed(2));
   };
   function EURtoBITC() {
     let input1 = document.getElementById('inputNumber11').value;
@@ -49,5 +49,5 @@ function keerSom() {
     let input1 = document.getElementById('inputNumber12').value;
     antwoord = input1 * 46762.26
     console.log(input1, antwoord);
-    alert("Uw antwoord voor uw deelsom is €" + antwoord);
+    alert("Uw antwoord voor uw deelsom is €" + antwoord.toFixed(2));
   };
