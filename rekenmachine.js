@@ -8,19 +8,19 @@
 //  body.classList.replace('normalMode', 'neonMode');
 //};
 let antwoord = 0;
-let input1 = "0" + document.getElementById('inputNumber1').value;
-let input2 = "0" + document.getElementById('inputNumber2').value;
+let input1 = 0 + document.getElementById('inputNumber1').value;
+let input2 = 0 + document.getElementById('inputNumber2').value;
 
-const numberOne =   "1";
-const numberTwo =   "2";
-const numberThree = "3";
-const numberFour =  "4";
-const numberFive =  "5";
-const numberSix =   "6";
-const numberSeven = "7";
-const numberEight = "8";
-const numberNine =  "9";
-const numberZero =  "0";
+const numberOne =   1;
+const numberTwo =   2;
+const numberThree = 3;
+const numberFour =  4;
+const numberFive =  5;
+const numberSix =   6;
+const numberSeven = 7;
+const numberEight = 8;
+const numberNine =  9;
+const numberZero =  0;
 
 function keerSom() {
     let input1 = document.getElementById('inputNumber1').value;
@@ -41,8 +41,10 @@ function keerSom() {
     console.log(input1, input2, antwoord);
   };
   function addEen() {
-    let input1 = document.getElementById('inputNumber1');
-    input1 = input1 +1;
+    let input1 = document.getElementById('inputNumber1')
+    let input3 = document.getElementById('inputNumber1');
+    const numberOne =   1;
+    input1 = input3 + numberOne;
     console.log(input1,);
   };
   function printantwoord() {
