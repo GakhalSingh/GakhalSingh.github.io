@@ -8,7 +8,7 @@ function keerSom() {
   function plusSom() {
     let input1 = document.getElementById('inputNumber1').value;
     let input2 = document.getElementById('inputNumber2').value;
-    antwoord = input1 + input2;
+    antwoord = parseInt(input1) + parseInt(input2);
     console.log(input1, input2, antwoord);
     alert("Uw antwoord voor uw plussom is " + antwoord);
   };
