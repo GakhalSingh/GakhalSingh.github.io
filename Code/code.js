@@ -1,3 +1,15 @@
+import  {getCurrencies} from "./CryptoStats.js"
+
+async function loadCurrencies () {
+  const data = await getCurrencies();
+  const Tabel = document.getElementById("Tabel")
+  for (let i = 0; i < data.length; i++) {
+    Tabel += data[i] + "<br>";
+}
+}
+loadCurrencies();
+document.getElementById("Tabel").innerHTML = Tabel;
+
 function button(){
   const bodyTheme = document.body;
   bodyTheme.classList.toggle("neonMode");
@@ -17,4 +29,6 @@ function dayToHour() {
   document.getElementById("days").innerHTML = days * 24;
   console.log(days, hours);
 };
+
+
 
