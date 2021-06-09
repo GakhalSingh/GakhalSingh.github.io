@@ -1,4 +1,5 @@
 import  {getCurrencies} from "./CryptoStats.js"
+import  {getPriceOfBTC} from "./CryptoStats.js"
 
 async function loadCurrencies () {
   const data = await getCurrencies();
@@ -8,6 +9,7 @@ async function loadCurrencies () {
 };
 };
 
+getPriceOfBTC();
 loadCurrencies();
 
 

@@ -13,7 +13,7 @@ export async function getCurrencies (){
 }
 export async function getPriceOfBTC (){
     try{
-        const response = await fetch ("https://api.n.exchange/en/api/v1/get_price/BTC/");
+        const response = await fetch ("https://api.n.exchange/en/api/v1/price/BTCLTC/latest/?market_code=nex");
         console.log(response)
         const data = await response.json()
         console.log(data)
