@@ -2,13 +2,14 @@ import  {getCurrencies} from "./CryptoStats.js"
 
 async function loadCurrencies () {
   const data = await getCurrencies();
-  const Tabel = document.getElementById("Tabel")
+  let   Tabel = "0"
   for (let i = 0; i < data.length; i++) {
-    Tabel += data[i] + "<br>";
-}
-}
+    document.getElementById("Tabel").innerHTML += data[i].name + " €" + data[i].minimal_amount + "<br> <br>";
+};
+};
+
 loadCurrencies();
-document.getElementById("Tabel").innerHTML = Tabel;
+
 
 function button(){
   const bodyTheme = document.body;
