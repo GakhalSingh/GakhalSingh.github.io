@@ -1,8 +1,6 @@
-
-
 import  {getCurrencies} from "./CryptoStats.js"
 import  {getPriceOfBTC} from "./CryptoStats.js"
-import  {getPic} from "./nasa.js"
+import  {getPic       } from "./nasa.js"
 
 // Hier is de Cryptocurrency API
 if (document.URL.includes("CryptoStats.html") ) {
@@ -27,7 +25,7 @@ if (document.URL.includes("CryptoStats.html") ) {
   };
 
   getPictureOfTheDay();
-}
+};
 
 function button(){
   const bodyTheme = document.body;
