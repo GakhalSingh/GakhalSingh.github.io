@@ -1,17 +1,33 @@
+
+
 import  {getCurrencies} from "./CryptoStats.js"
 import  {getPriceOfBTC} from "./CryptoStats.js"
+import  {getPic} from "./nasa.js"
 
-async function loadCurrencies () {
-  const data = await getCurrencies();
-  let   Tabel = "0"
-  for (let i = 0; i < data.length; i++) {
-    document.getElementById("Tabel").innerHTML += data[i].name + " €" + data[i].minimal_amount + "<br> <br>";
-};
-};
+// Hier is de Cryptocurrency API
+if (document.URL.includes("CryptoStats.html") ) {
+  async function loadCurrencies () {
+    const data = await getCurrencies();
+    let   Tabel = "0"
+    for (let i = 0; i < data.length; i++) {
+      document.getElementById("Tabel").innerHTML += data[i].name + " €" + data[i].minimal_amount + "<br> <br>";
+  };
+  };
 
-getPriceOfBTC();
-loadCurrencies();
+  getPriceOfBTC();
+  loadCurrencies();
+  
+  // Hier is de NASA Api
+} if (document.URL.includes("PictureOfTheDay.html") ) {
+  async function getPictureOfTheDay () {
+    const data = await getPic();
+    for (let i = 0; i < data.length; i++) {
+      document.getElementById("PictureLocation").innerHTML += data[i].imq + "<br></br>";
+  };
+  };
 
+  getPictureOfTheDay();
+}
 
 function button(){
   const bodyTheme = document.body;
