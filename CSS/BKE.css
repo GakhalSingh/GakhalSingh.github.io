@@ -1,12 +1,4 @@
-* {
-    margin: 0;
-    padding: 10px;
-  }
-  
-
   body {
-
-    display: flex;
     flex-direction: column;
     align-items: center;
 
@@ -17,15 +9,6 @@
     font-size: 24px;
     text-align: center;
   }
-  
-
-  
-
-    
-
-
-  
-
   
   .reset-game-button {
     background-color:#EC3576;
@@ -50,6 +33,7 @@
     
   /* Game Board */
     .tic-tac-toe-board {
+      display: flex ;
       width: 400px;
       height: 400px;
       margin: 400 auto;
@@ -60,7 +44,11 @@
       display: grid;
       grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   }
-  
+
+  .BoardPlacement {
+    display: flex;    
+  }
+
   .box {
     border: 6px solid #2c3e50;
     border-radius: 2px;
