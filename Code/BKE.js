@@ -1,5 +1,5 @@
     // hier wordt player geïmporteerd
-    import Player from "./Player.js";
+
 
     // Hier zijn alle lets
     let currentPlayer = 0; 
