@@ -171,6 +171,14 @@
         }
     }
     
+    if (btnL1.textContent == "X" || "O" && btnL3.textContent == "X" || "O" && btnM1.textContent == "X" || "O" && btnM2.textContent == "X" || "O" && btnM3.textContent == "X" || "O" && btnR1.textContent == "X" || "O" && btnR2.textContent == "X" || "O" && btnR3.textContent == "X" || "O" ){
+        alert("The game has ended in a draw! Both players have been awarded half a level.")
+        playerOneLevel + 0,5;
+        playerTwoLevel + 0,5;
+    }
+
+
+
     // Hier wordt het bord gereset en punten getoond.
     function resetGame() {
         
